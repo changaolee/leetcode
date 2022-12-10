@@ -30,6 +30,7 @@ string convert(string s, int numRows);
 ```
 
 **示例 2：**
+
 ```txt
 输入：s = "PAYPALISHIRING", numRows = 4
 输出："PINALSIGYAHRPI"
