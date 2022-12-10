@@ -38,6 +38,7 @@ python solution.py
 | 12 | [整数转罗马数字](https://leetcode.cn/problems/integer-to-roman/) | 字符串：实现 | [:arrow_forward:](https://www.bilibili.com/video/BV1Lq4y1A7uE) [模拟](./0001-0050/0012) | [C++](./0001-0050/0012/solution.cpp) \| [Go](./0001-0050/0012/solution.go) \| [Python](./0001-0050/0012/solution.py) | 中等 |
 | 13 | [罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | 字符串：实现 | [:arrow_forward:](https://www.bilibili.com/video/BV1k3411e7fD) [模拟](./0001-0050/0013) | [C++](./0001-0050/0013/solution.cpp) \| [Go](./0001-0050/0013/solution.go) \| [Python](./0001-0050/0013/solution.py) | 简单 |
 | 14 | [最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | 字符串：基础 | [:arrow_forward:](https://www.bilibili.com/video/BV1744y157CX) [模拟](./0001-0050/0014) | [C++](/0001-0050/0014/solution.cpp) \| [Go](./0001-0050/0014/solution.go) \| [Python](./0001-0050/0014/solution.py) | 简单 |
+| 15 | [三数之和](https://leetcode.cn/problems/3sum/) | 数组：求和 | [:arrow_forward:](https://www.bilibili.com/video/BV1Jq4y1A7u7) [双指针](./0001-0050/0015) | [C++](./0001-0050/0015/solution.cpp) \| [Go](./0001-0050/0015/solution.go) \| [Python](./0001-0050/0015/solution.py) | 中等 |
 
 ## License
 
