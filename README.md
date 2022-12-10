@@ -36,6 +36,7 @@ python solution.py
 | 10 | [正则表达式匹配](https://leetcode.cn/problems/regular-expression-matching/) | 动态规划：线性 DP | [:arrow_forward:](https://www.bilibili.com/video/BV1Br4y1v7SA) [线性 DP](./0001-0050/0010) | [C++](./0001-0050/0010/solution.cpp) \| [Go](./0001-0050/0010/solution.go) \| [Python](./0001-0050/0010/solution.py) | 困难 |
 | 11 | [盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | 数组：双指针 | [:arrow_forward:](https://www.bilibili.com/video/BV1za411q7QG) [双指针](./0001-0050/0011) | [C++](./0001-0050/0011/solution.cpp) \| [Go](./0001-0050/0011/solution.go) \| [Python](./0001-0050/0011/solution.py) | 中等 |
 | 12 | [整数转罗马数字](https://leetcode.cn/problems/integer-to-roman/) | 字符串：实现 | [:arrow_forward:](https://www.bilibili.com/video/BV1Lq4y1A7uE) [模拟](./0001-0050/0012) | [C++](./0001-0050/0012/solution.cpp) \| [Go](./0001-0050/0012/solution.go) \| [Python](./0001-0050/0012/solution.py) | 中等 |
+| 13 | [罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | 字符串：实现 | [:arrow_forward:](https://www.bilibili.com/video/BV1k3411e7fD) [模拟](./0001-0050/0013) | [C++](./0001-0050/0013/solution.cpp) \| [Go](./0001-0050/0013/solution.go) \| [Python](./0001-0050/0013/solution.py) | 简单 |
 
 ## License
 

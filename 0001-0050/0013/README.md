@@ -75,6 +75,66 @@ M             1000
 
 ## 解析
 
+遍历罗马数字，逐个处理，若当前数字小于右侧数字，则减去对应数值；否则，累加对应数值。
+
 ## 代码
 
 ### C++
+
+```cpp
+class Solution {
+public:
+    int romanToInt(string s) {
+        unordered_map<char, int> value = {
+            {'I', 1}, {'V', 5}, {'X', 10}, {'L', 50},
+            {'C', 100}, {'D', 500}, {'M', 1000}
+        };
+        int ans = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (i + 1 < s.length() && value[s[i]] < value[s[i + 1]]) {
+                ans -= value[s[i]];
+            } else {
+                ans += value[s[i]];
+            }
+        }
+        return ans;
+    }
+};
+```
+
+### Go
+
+```go
+func romanToInt(s string) (ans int) {
+    value := map[byte]int{
+        'I': 1, 'V': 5, 'X': 10, 'L': 50,
+        'C': 100, 'D': 500, 'M': 1000,
+    }
+    for i := 0; i < len(s); i++ {
+        if i+1 < len(s) && value[s[i]] < value[s[i+1]] {
+            ans -= value[s[i]]
+        } else {
+            ans += value[s[i]]
+        }
+    }
+    return
+}
+```
+
+### Python
+
+```python
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        value = {
+            'I': 1, 'V': 5, 'X': 10, 'L': 50,
+            'C': 100, 'D': 500, 'M': 1000,
+        }
+        ans = 0
+        for i in range(len(s)):
+            if i + 1 < len(s) and value[s[i]] < value[s[i + 1]]:
+                ans -= value[s[i]]
+            else:
+                ans += value[s[i]]
+        return ans
+```
