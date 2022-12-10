@@ -33,6 +33,85 @@
 
 ## 解析
 
+本题思路与 [0015. 三数之和](../0015) 类似，只是更新结果的条件变为比较差值的大小，保留差值更小的结果。
+
 ## 代码
 
 ### C++
+
+```cpp
+class Solution {
+public:
+    int threeSumClosest(vector<int>& nums, int target) {
+        int ans = nums[0] + nums[1] + nums[2];
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < nums.size(); i++) {
+            int l = i + 1, r = nums.size() - 1;
+            while (l < r) {
+                int sum = nums[i] + nums[l] + nums[r];
+                if (sum == target) return sum;
+                if (abs(sum - target) < abs(ans - target)) ans = sum;
+                if (sum < target) l++;
+                else r--;
+            }
+        }
+        return ans;
+    }
+};
+```
+
+### Go
+
+```go
+func threeSumClosest(nums []int, target int) int {
+    ans := nums[0] + nums[1] + nums[2]
+    sort.Ints(nums)
+    for i := 0; i < len(nums); i++ {
+        l, r := i+1, len(nums)-1
+        for l < r {
+            sum := nums[i] + nums[l] + nums[r]
+            if sum == target {
+                return sum
+            }
+            if abs(sum-target) < abs(ans-target) {
+                ans = sum
+            }
+            if sum < target {
+                l++
+            } else {
+                r--
+            }
+        }
+    }
+    return ans
+}
+
+func abs(x int) int {
+    if x < 0 {
+        return -x
+    }
+    return x
+}
+```
+
+### Python
+
+```python
+class Solution:
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
+        ans = nums[0] + nums[1] + nums[2]
+        nums.sort()
+        for i in range(len(nums)):
+            l, r = i + 1, len(nums) - 1
+            while l < r:
+                _sum = nums[i] + nums[l] + nums[r]
+                if _sum == target:
+                    return _sum
+                if abs(_sum - target) < abs(ans - target):
+                    ans = _sum
+                if _sum < target:
+                    l += 1
+                else:
+                    r -= 1
+        return ans
+```
