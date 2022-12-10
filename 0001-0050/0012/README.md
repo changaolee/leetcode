@@ -70,6 +70,46 @@ M             1000
 
 ## 解析
 
+硬编码数字，每一位单独处理。
+
 ## 代码
 
 ### C++
+
+```cpp
+class Solution {
+public:
+    string intToRoman(int num) {
+        string thousands[] = {"", "M", "MM", "MMM"};
+        string hundreds[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        string tens[] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+        string ones[] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+        return thousands[num / 1000] + hundreds[num % 1000 / 100] + tens[num % 100 / 10] + ones[num % 10];
+    }
+};
+```
+
+### Go
+
+```go
+func intToRoman(num int) string {
+    thousands := []string{"", "M", "MM", "MMM"}
+    hundreds := []string{"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"}
+    tens := []string{"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"}
+    ones := []string{"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"}
+    return thousands[num/1000] + hundreds[num%1000/100] + tens[num%100/10] + ones[num%10]
+}
+```
+
+### Python
+
+```python
+class Solution:
+    def intToRoman(self, num: int) -> str:
+        thousands = ["", "M", "MM", "MMM"]
+        hundreds = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+        tens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+        ones = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+        return thousands[num // 1000] + hundreds[num % 1000 // 100] + tens[num % 100 // 10] + ones[num % 10]
+
+```
