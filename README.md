@@ -1,0 +1,41 @@
+## 力扣（LeetCode）题解
+
+> B 站[《力扣每日一题》](https://space.bilibili.com/320530935/channel/collectiondetail?sid=115840)源码仓库，[在线阅读地址](https://blog.lichangao.com/daily_practice/leetcode/overview/question_summary.html)
+
+
+## 代码调试方法
+
+进入题解所在目录执行以下命令：
+
+```bash
+# C++
+g++ solution.cpp -o solution -std=c++17 && ./solution
+
+# Go
+go run solution.go
+
+# Python
+python solution.py
+```
+
+每通过一个用例会输出：`PASS: CASE XXX`，未通过会输出：`FAIL: CASE XXX`。
+
+## 算法题解
+
+| # | 题目 | 分类 | 题解 | 代码（ACM 模式） | 难度 |
+| --- | --- | --- | --- | --- | --- |
+| 1 | [两数之和](https://leetcode.cn/problems/two-sum/) | 数组：求和 | [:arrow_forward:](https://www.bilibili.com/video/BV1Xu411S7uo) [哈希表](./0001-0050/0001)  | [C++](./0001-0050/0001/solution.cpp) \| [Go](./0001-0050/0001/solution.go) \| [Python](./0001-0050/0001/solution.py) | 简单 |
+| 2 | [两数相加](https://leetcode.cn/problems/add-two-numbers/) | 链表：数组相关 | [:arrow_forward:](https://www.bilibili.com/video/BV1Wi4y1R7P7) [模拟](./0001-0050/0002) | [C++](./0001-0050/0002/solution.cpp) \| [Go](./0001-0050/0002/solution.go) \| [Python](./0001-0050/0002/solution.py) | 中等 |
+| 3 | [无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) | 字符串：滑动窗口 | [:arrow_forward:](https://www.bilibili.com/video/bv1GM4y1F7vn) [滑动窗口](./0001-0050/0003) | [C++](./0001-0050/0003/solution.cpp) \| [Go](./0001-0050/0003/solution.go) \| [Python](./0001-0050/0003/solution.py) | 中等 |
+| 4 | [寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) | 数组：其他 | [:arrow_forward:](https://www.bilibili.com/video/BV1DL4y1E7ai) [二分法](./0001-0050/0004) | [C++](./0001-0050/0004/solution.cpp) \| [Go](./0001-0050/0004/solution.go) \| [Python](./0001-0050/0004/solution.py) | 困难 |
+| 5 | [最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/) | 字符串：回文 | [:arrow_forward:](https://www.bilibili.com/video/BV1UZ4y1U7tt) [模拟](./0001-0050/0005) | [C++](./0001-0050/0005/solution.cpp) \| [Go](./0001-0050/0005/solution.go) \| [Python](./0001-0050/0005/solution.py) | 中等 |
+| 6 | [Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/) | 字符串：实现 | [:arrow_forward:](https://www.bilibili.com/video/BV1U34y1q7UN) [模拟](./0001-0050/0006) | [C++](./0001-0050/0006/solution.cpp) \| [Go](./0001-0050/0006/solution.go) \| [Python](./0001-0050/0006/solution.py) | 中等 |
+| 7 | [整数反转](https://leetcode.cn/problems/reverse-integer/) | 数学题：基础 | [:arrow_forward:](https://www.bilibili.com/video/BV1234y1q7XN) [模拟](./0001-0050/0007) | [C++](./0001-0050/0007/solution.cpp) \| [Go](./0001-0050/0007/solution.go) \| [Python](./0001-0050/0007/solution.py) | 中等 |
+| 8 | [字符串转换整数 (atoi)](https://leetcode.cn/problems/string-to-integer-atoi/) | 数学题：基础 | [:arrow_forward:](https://www.bilibili.com/video/BV1QR4y1u75y) [模拟](./0001-0050/0008) | [C++](./0001-0050/0008/solution.cpp) \| [Go](./0001-0050/0008/solution.go) \| [Python](./0001-0050/0008/solution.py) | 中等 |
+| 9 | [回文数](https://leetcode.cn/problems/palindrome-number/) | 字符串：回文 | [:arrow_forward:](https://www.bilibili.com/video/BV1iD4y1F7PL) [模拟](./0001-0050/0009) | [C++](./0001-0050/0009/solution.cpp) \| [Go](./0001-0050/0009/solution.go) \| [Python](./0001-0050/0009/solution.py) | 简单 |
+| 10 | [正则表达式匹配](https://leetcode.cn/problems/regular-expression-matching/) | 动态规划：线性 DP | [:arrow_forward:](https://www.bilibili.com/video/BV1Br4y1v7SA) [线性 DP](./0001-0050/0010) | [C++](./0001-0050/0010/solution.cpp) \| [Go](./0001-0050/0010/solution.go) \| [Python](./0001-0050/0010/solution.py) | 困难 |
+| 11 | [盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | 数组：双指针 | [:arrow_forward:](https://www.bilibili.com/video/BV1za411q7QG) [双指针](./0001-0050/0011) | [C++](./0001-0050/0011/solution.cpp) \| [Go](./0001-0050/0011/solution.go) \| [Python](./0001-0050/0011/solution.py) | 中等 |
+
+## License
+
+[CC BY-NC-ND 4.0](./LICENSE)
