@@ -38,6 +38,101 @@
 
 ## 解析
 
+首先存储每个数字对应的所有可能的字母，然后进行回溯操作。回溯过程中维护一个字符串，表示已有的字母排列，并记录当前回溯位置。每次尝试对应位置数字的所有字母，即可得到完整排列。
+
 ## 代码
 
 ### C++
+
+```cpp
+class Solution {
+    vector<string> ans;
+    string strs[10] = {
+        "", "", "abc", "def",
+        "ghi", "jkl", "mno",
+        "pqrs", "tuv", "wxyz"
+    };
+public:
+    vector<string> letterCombinations(string digits) {
+        ans = vector<string>();
+        if (digits.empty()) return ans;
+        dfs(digits, 0, "");
+        return ans;
+    }
+    
+    void dfs(string &digits, int idx, string combine) {
+        if (idx == digits.length()) {
+            ans.push_back(combine);
+            return;
+        }
+        string s = strs[digits[idx] - '0'];
+        for (int i = 0; i < s.length(); i++) {
+            combine.push_back(s[i]);
+            dfs(digits, idx + 1, combine);
+            combine.pop_back();
+        }
+    }
+};
+```
+
+### Go
+
+```go
+var ans []string
+var strs = []string{
+    "", "", "abc", "def",
+    "ghi", "jkl", "mno",
+    "pqrs", "tuv", "wxyz",
+}
+
+func letterCombinations(digits string) []string {
+    ans = []string{}
+    if len(digits) == 0 {
+        return ans
+    }
+    dfs(digits, 0, "")
+    return ans
+}
+
+func dfs(digits string, idx int, combine string) {
+    if idx == len(digits) {
+        ans = append(ans, combine)
+        return
+    }
+    s := strs[digits[idx]-'0']
+    for i := 0; i < len(s); i++ {
+        combine += string(s[i])
+        dfs(digits, idx+1, combine)
+        combine = combine[:len(combine)-1]
+    }
+}
+```
+
+### Python
+
+```python
+class Solution:
+    ans = []
+    strs = [
+        "", "", "abc", "def",
+        "ghi", "jkl", "mno",
+        "pqrs", "tuv", "wxyz"
+    ]
+
+    def letterCombinations(self, digits: str) -> List[str]:
+        self.ans = []
+        if not digits:
+            return self.ans
+        self.dfs(digits, 0, "")
+        return self.ans
+
+    def dfs(self, digits, idx, combine):
+        if idx == len(digits):
+            self.ans.append(combine)
+            return
+        s = self.strs[int(digits[idx])]
+        for i in range(len(s)):
+            combine += s[i]
+            self.dfs(digits, idx + 1, combine)
+            combine = combine[:-1]
+```
