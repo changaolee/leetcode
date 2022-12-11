@@ -43,6 +43,7 @@ python solution.py
 | 17 | [电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | 回溯法：实现 | [:arrow_forward:](https://www.bilibili.com/video/BV17q4y1A7sL) [DFS](./0001-0050/0017) | [C++](./0001-0050/0017/solution.cpp) \| [Go](./0001-0050/0017/solution.go) \| [Python](./0001-0050/0017/solution.py) | 中等 |
 | 18 | [四数之和](https://leetcode.cn/problems/4sum/) | 数组：求和 | [:arrow_forward:](https://www.bilibili.com/video/BV1w3411Y7fw) [双指针](./0001-0050/0018) | [C++](./0001-0050/0018/solution.cpp) \| [Go](./0001-0050/0018/solution.go) \| [Python](./0001-0050/0018/solution.py) | 中等 |
 | 19 | [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | 链表：删除 | [:arrow_forward:](https://www.bilibili.com/video/BV1fq4y1y7z3) [双指针](./0001-0050/0019) | [C++](./0001-0050/0019/solution.cpp) \| [Go](./0001-0050/0019/solution.go) \| [Python](./0001-0050/0019/solution.py) | 中等 |
+| 20 | [有效的括号](https://leetcode.cn/problems/valid-parentheses/) | 栈：平衡符号 | [:arrow_forward:](https://www.bilibili.com/video/BV1LL4y147FM) [栈](./0001-0050/0020) | [C++](./0001-0050/0020/solution.cpp) \| [Go](./0001-0050/0020/solution.go) \| [Python](./0001-0050/0020/solution.py) | 简单 |
 
 ## License
 
